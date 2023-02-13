@@ -11,6 +11,8 @@ app.use(express.json())
 app.use(morgan("dev"))
 
 
+mongoose.set('strictQuery', true)
+
 // connect to
 
 mongoose.connect(

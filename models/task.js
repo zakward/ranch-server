@@ -31,10 +31,7 @@ const taskSchema = new Schema( {
     user: {
         type: Schema.Types.ObjectId,
         ref: "User"
-    }, 
-    strict: true
     }
-
 })
 
 module.exports = mongoose.model("Task", taskSchema)
