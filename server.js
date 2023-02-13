@@ -24,10 +24,9 @@ mongoose.connect(
 //routes
 
 // NOTE: changed tasks to projects on the front end
-// app.use("/chores", require("./routes/choresRouter.js"))
-// app.use("/chores", require("./routes/choresRouter.js"))
-// app.use("/tasks", require("./routes/tasksRouter.js")) //extra projects
-// app.use("/supplies", require("./routes/suppliesRouter.js"))
+app.use("/chores", require("./routes/choresRouter.js"))
+app.use("/tasks", require("./routes/tasksRouter.js")) //extra projects
+app.use("/supplies", require("./routes/suppliesRouter.js"))
 // app.use("/auth", require("./routes/authRouter.js"))
 // app.use("/api", expressjwt({secret: process.env.SECRET, algorithms:['HS256']}))
 
