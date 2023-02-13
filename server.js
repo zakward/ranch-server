@@ -18,7 +18,10 @@ mongoose.connect(
     (err) => {
         if (err) throw err
         console.log("Connected to the DataBase")
-    }
+    },
+    app.listen(PORT, () => {
+        console.log(`The Server is running on Port ${PORT}`)
+    })
 )
  
 //routes
@@ -42,6 +45,6 @@ app.use((err, req, res, nexdt) => {
 
 
 
-app.listen(PORT, () => {
-    console.log(`The Server is running on Port ${PORT}`)
-})
+// app.listen(PORT, () => {
+//     console.log(`The Server is running on Port ${PORT}`)
+// })
